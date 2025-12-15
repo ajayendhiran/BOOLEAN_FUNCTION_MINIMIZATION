@@ -1,4 +1,5 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
+**Date:15/12/2025**
 
 **AIM:**
 
@@ -18,6 +19,7 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Logic Diagram**
 
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -34,15 +36,29 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+module boolean_function_4var (
+    input  wire A,
+    input  wire B,
+    input  wire C,
+    input  wire D,
+    output wire F
+);
 
-Developed by: RegisterNumber:*/
+assign F = (~A & B) | (C & D) | (A & ~D);
+
+endmodule
+```
+Developed by:Jeyandhiran RegisterNumber:25017257 */
 
 
-**RTL realization**
+
 
 **Output:**
-
+<img width="1520" height="828" alt="image" src="https://github.com/user-attachments/assets/f97ce227-3b72-48ba-a9ff-4a6a1b1b651c" />
+**RTL realization**
 **RTL**
+<img width="1012" height="261" alt="image" src="https://github.com/user-attachments/assets/63943a45-385b-4167-b92a-b1e8bfa365d1" />
 
 **Timing Diagram**
 
